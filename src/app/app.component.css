@@ -43,6 +43,12 @@
 	  background-color: #4dffa6;
 }
 
+.handmade>tbody>tr {
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #99ebff;
+}
+
 .handmade>thead>tr>th{
   border: 1px solid black;
 }
