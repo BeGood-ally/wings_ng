@@ -22,9 +22,9 @@ type man = {id: string, fname: string, lname: string, mname: string};
 })
 export class AppComponent {
   title = 'wings';
-  head = [
-    [['Номер','id'],['ФИО','Name']],
-    [['Имя','firstName'],['Фамилия','lastName'],['Отчество','middleName']]
+  head: any[] = [
+    [['Номер','id',{rowspan: 2}],['ФИО','Name',{colspan: 3}, true]],
+    [['Имя','fname'],['Фамилия','lname'],['Отчество','mname']]
   ];
   people: man[] = [
     {id : '1', fname : 'Николай', lname : 'Васильевич', mname : 'Куссмауль'},
