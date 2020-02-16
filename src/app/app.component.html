@@ -3,22 +3,53 @@
 </div>
 
 
-<button mat-fab aria-label="Example icon-button with a heart icon">
-  <mat-icon>favorite</mat-icon>
-</button>
-
-<mat-tab-group dynamicHeight>
-  <mat-tab label="Short tab">
-    <div class="example-small-box mat-elevation-z4">
-      Small content
+<div class="form-inline">
+  <div class="form-group">
+    <div class="col-md-8">
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="id"
+        placeholder="id"
+      />
     </div>
-  </mat-tab>
-  <mat-tab label="Long tab">
-    <div class="example-large-box mat-elevation-z4">
-      Large content
+  </div>
+  <div class="form-group">
+    <div class="col-md-8">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="fname"
+        placeholder="name"
+      />
     </div>
-  </mat-tab>
-</mat-tab-group>
+  </div>
+  <div class="form-group">
+    <div class="col-md-8">
+      <input
+        class="form-control"
+        [(ngModel)]="lname"
+        placeholder="patronim"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-8">
+      <input
+        class="form-control"
+        [(ngModel)]="mname"
+        placeholder="lastname"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-8">
+      <button class="btn btn-default" (click)="addMan(id, fname, lname, mname)">
+        Добавить
+      </button>
+    </div>
+  </div>
+</div>
 
 <table class="handmade">
   <thead>
